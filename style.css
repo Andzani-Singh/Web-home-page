@@ -10,24 +10,15 @@ body {
     background-color: #f5f5f5;
 }
 
-/* ---------- NAVBAR ---------- */
-.navbar {
-    background-color: #1a4b8c;   /* blue */
-    padding: 20px 50px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-  
-
 body{
  background-color: rgb(230, 128, 18);
  margin: 0;
  padding:0;
 }
 .navbar {
-    background-color:  rgb(230, 128, 18);
-    border-bottom: 1px solid white;
+    background-color: #1160c7;   /* blue */
     padding: 20px 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .nav-container {
     display: flex;
@@ -158,10 +149,6 @@ body{
     text-decoration: none;
     color: white;
     font-size: 16px;
-}
-.nav-links li:first-child a,
-.nav-links li:last-child a {
-    color: #000000;
 }
  h1 {
         text-align: center;
