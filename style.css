@@ -1,7 +1,22 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+    background-color: #1a4b8c;   /* blue */
+    padding: 20px 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 body{
@@ -18,6 +33,17 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+}
+
 }
 .logo {
     font-size: 20px;
@@ -28,6 +54,100 @@ body{
     display: flex;
     list-style: none;
     gap: 30px;
+}
+
+/* NAV ITEMS – WHITE & BOLD */
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;        /* white */
+    font-weight: bold;     /* bold */
+    font-size: 16px;
+    transition: opacity 0.2s;
+}
+
+.nav-links li a:hover {
+    opacity: 0.7;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+    text-align: center;
+    padding: 80px 20px 60px;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    margin: 40px 50px 0;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #1a4b8c;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 36px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: #1a4b8c;
+    color: white;
+    border: 2px solid #1a4b8c;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: #1a4b8c;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #1a4b8c;
+    border: 2px solid #1a4b8c;
+}
+
+.btn-secondary:hover {
+    background-color: #1a4b8c;
+    color: white;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .hero h1 {
+        font-size: 32px;
+    }
+    .hero {
+        margin: 20px 15px 0;
+        padding: 40px 15px;
+    }
     margin: 0;
     padding: 0;
 }
