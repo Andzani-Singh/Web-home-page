@@ -1,176 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E Startup</title>
-    <style>
-        /* ---------- RESET ---------- */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
 
-        body {
-            background-color: #f5f5f5;   /* light gray background for contrast */
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
-        /* ---------- NAVBAR ---------- */
-        .navbar {
-            /* >>> CHANGE 1: NAVBAR BACKGROUND TO BLUE <<< */
-            background-color: #1a4b8c;   /* blue */
-            /* If you prefer a pure blue, you can use "blue" or "#0000ff" */
-            padding: 20px 50px;
-            border-bottom: 1px solid rgba(255,255,255,0.2);
-        }
+body {
+    background-color: #f5f5f5;
+}
 
-        .nav-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+/* ---------- NAVBAR ---------- */
+.navbar {
+    background-color: #1a4b8c;   /* blue */
+    padding: 20px 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
 
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: white;               /* logo also white to match */
-            letter-spacing: 1px;
-        }
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 30px;
-        }
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+}
 
-        /* >>> CHANGE 2: NAV ITEMS – WHITE & BOLD <<< */
-        .nav-links li a {
-            text-decoration: none;
-            color: #ffffff;             /* white */
-            font-weight: bold;          /* bold */
-            font-size: 16px;
-            transition: opacity 0.2s;
-        }
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
 
-        .nav-links li a:hover {
-            opacity: 0.7;               /* subtle hover effect */
-        }
+/* NAV ITEMS – WHITE & BOLD */
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;        /* white */
+    font-weight: bold;     /* bold */
+    font-size: 16px;
+    transition: opacity 0.2s;
+}
 
-        /* (Optional) If you had special rules for first/last items, they now follow the same style) */
+.nav-links li a:hover {
+    opacity: 0.7;
+}
 
-        /* ---------- HERO SECTION ---------- */
-        .hero {
-            text-align: center;
-            padding: 80px 20px 60px;
-            background: linear-gradient(145deg, #ffffff, #f0f0f0);
-            margin: 40px 50px 0;
-            border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-        }
+/* ---------- HERO SECTION ---------- */
+.hero {
+    text-align: center;
+    padding: 80px 20px 60px;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    margin: 40px 50px 0;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
 
-        .hero h1 {
-            font-size: 48px;
-            color: #1a4b8c;             /* blue to echo the navbar */
-            margin-bottom: 16px;
-        }
+.hero h1 {
+    font-size: 48px;
+    color: #1a4b8c;
+    margin-bottom: 16px;
+}
 
-        .hero p {
-            font-size: 20px;
-            color: #555;
-            margin-bottom: 30px;
-        }
+.hero p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 30px;
+}
 
-        .hero .btn-group {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
-        .btn {
-            display: inline-block;
-            padding: 14px 36px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 16px;
-            transition: all 0.3s;
-        }
+.btn {
+    display: inline-block;
+    padding: 14px 36px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s;
+}
 
-        .btn-primary {
-            background-color: #1a4b8c;
-            color: white;
-            border: 2px solid #1a4b8c;
-        }
+.btn-primary {
+    background-color: #1a4b8c;
+    color: white;
+    border: 2px solid #1a4b8c;
+}
 
-        .btn-primary:hover {
-            background-color: transparent;
-            color: #1a4b8c;
-        }
+.btn-primary:hover {
+    background-color: transparent;
+    color: #1a4b8c;
+}
 
-        .btn-secondary {
-            background-color: transparent;
-            color: #1a4b8c;
-            border: 2px solid #1a4b8c;
-        }
+.btn-secondary {
+    background-color: transparent;
+    color: #1a4b8c;
+    border: 2px solid #1a4b8c;
+}
 
-        .btn-secondary:hover {
-            background-color: #1a4b8c;
-            color: white;
-        }
+.btn-secondary:hover {
+    background-color: #1a4b8c;
+    color: white;
+}
 
-        /* ---------- RESPONSIVE ---------- */
-        @media (max-width: 768px) {
-            .nav-container {
-                flex-direction: column;
-                gap: 15px;
-            }
-            .nav-links {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 15px;
-            }
-            .hero h1 {
-                font-size: 32px;
-            }
-            .hero {
-                margin: 20px 15px 0;
-                padding: 40px 15px;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <!-- ===== NAVBAR ===== -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">E Startup</div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Price</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- ===== HERO ===== -->
-    <section class="hero">
-        <h1>WELCOME TO E STARTUP</h1>
-        <p>Powerful multipurpose landing page template</p>
-        <div class="btn-group">
-            <a href="#" class="btn btn-primary">Read More</a>
-            <a href="#" class="btn btn-secondary">Read More</a>
-        </div>
-    </section>
-
-</body>
-</html>
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .hero h1 {
+        font-size: 32px;
+    }
+    .hero {
+        margin: 20px 15px 0;
+        padding: 40px 15px;
+    }
+}
