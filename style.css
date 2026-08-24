@@ -357,6 +357,13 @@ footer .footer-bottom p {
 }
 
 
+/* Alternative: target any heading with "About" text */
+.about-page h1,
+.about-page h2,
+.about-page h3 {
+    text-align: center;
+}
+
 
 .services-page {
     max-width: 1100px;
@@ -440,4 +447,13 @@ footer .footer-bottom p {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}.about-us {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about-us h2,
+.about-us h3 {
+    text-align: center;
 }
