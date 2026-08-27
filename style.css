@@ -263,9 +263,197 @@ footer .footer-bottom p {
 }
 
 /* Responsive */
-@media (max-width: 700px) {
+@media (max-width: 700px) {}
     footer .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
     }
+/* ============================================================ */
+/* ========== ABOUT PAGE – FULLY CENTERED ========== */
+/* ============================================================ */
+
+.about-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-page h1 {
+    color: #1a4b8c;
+    font-size: 42px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.about-page .sub-heading {
+    color: #1a4b8c;
+    font-size: 28px;
+    margin: 30px 0 15px;
+    text-align: center;
+}
+
+.about-page p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+/* Centered list of founders */
+.about-page ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+.about-page ul li {
+    color: #333;
+    font-size: 17px;
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.about-page ul li:last-child {
+    border-bottom: none;
+}
+
+/* Center the "Read More" button on About page */
+.about-page .btn-about {
+    display: inline-block;
+    padding: 14px 40px;
+    background-color: #1a4b8c;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 20px auto 10px;
+    transition: background 0.3s;
+    border: 2px solid #1a4b8c;
+}
+
+.about-page .btn-about:hover {
+    background-color: transparent;
+    color: #1a4b8c;
+}
+
+/* "Collaborators" section */
+.about-page .collaborators {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid #e0e0e0;
+}
+
+.about-page .collaborators h3 {
+    color: #1a4b8c;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+/* Alternative: target any heading with "About" text */
+.about-page h1,
+.about-page h2,
+.about-page h3 {
+    text-align: center;
+}
+
+
+.services-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services-page h1 {
+    color: #1a4b8c;
+    font-size: 42px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.services-page > p {
+    color: #555;
+    font-size: 18px;
+    max-width: 650px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+/* Grid of service cards – CENTERED */
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+/* Each service card – text centered */
+.service-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    max-width: 300px;
+    flex: 1 1 220px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.service-card h3 {
+    color: #1a4b8c;
+    font-size: 22px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.service-card p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+/* Center any container */
+.container-center {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Center text */
+.text-center {
+    text-align: center;
+}
+
+/* Center block elements (images, divs) */
+.block-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}.about-us {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about-us h2,
+.about-us h3 {
+    text-align: center;
 }
