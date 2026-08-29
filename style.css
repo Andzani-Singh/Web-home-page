@@ -25,11 +25,21 @@ body{
  background-color: rgb(230, 128, 18);
  margin: 0;
  padding:0;
+ padding-top: 80px;
 }
 .navbar {
+     background-color: rgba(17, 96, 199, 0.85);  
     background-color: #1160c7;   /* blue */
     padding: 20px 50px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    transition: background-color 0.3s ease;
 }
 .nav-container {
     display: flex;
