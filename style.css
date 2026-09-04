@@ -173,8 +173,11 @@ body{
  h1 {
         text-align: center;
      padding-bottom:20%;   
-     padding-top: 10%; 
+     padding-top: 4%; 
     }
+h2 {
+        text-align: center;
+}
 h1 {
     color: white;
 }
